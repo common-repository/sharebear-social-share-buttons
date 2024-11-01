@@ -1,0 +1,62 @@
+// 1024
+@media screen and (max-width:1024px) {
+
+	// Sizes
+	.sb-large {
+		.sb-icon {
+			font-size: 				22px;
+			height:					45px;
+			width: 					45px;
+			i {
+				line-height:		45px;
+			}
+		}
+	}
+
+	.sb-large.sb-outlined {
+		.sb-icon i {
+			line-height: 			43px;
+		}
+	}
+
+
+	.sb-sidebar .sb-large {
+		width: 						45px;
+	}
+
+}
+
+// 1024
+@media screen and (min-width:1025px) {
+
+	.sharebear, .sb-sidebar .sharebear {
+		.sb-whatsapp {
+			display: 				none;
+		}
+	}
+
+}
+
+// 768
+@media screen and (max-width:768px) {
+
+}
+
+// 480
+@media screen and (max-width:480px) {
+
+	.sb-content {
+		.sb-button {
+			.sb-icon {
+				width: 				100%;
+			}
+			.sb-button-text {
+				// vertical-align: 	top;
+				// font-size: 			12px;
+				// margin-left: 		15px;
+			}
+		}
+	}
+
+
+}

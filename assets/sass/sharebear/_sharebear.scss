@@ -1,0 +1,529 @@
+/* Variables */
+$base-color:					#f2f2f2;
+$brand-color:					#bbb;
+$googleplus:					#d34836;
+$twitter:						#00aced;
+$facebook:						#3B5998;
+$reddit:						#ff4500;
+$linkedin:						#0077b5;
+$envelope:						#666;
+$whatsapp:						#25d366;
+$pinterest:						#bd081c;
+$stumbleupon:					#eb4924;
+
+/* Reset */
+.sharebear, .sharebear > * {
+	-webkit-box-sizing: 		border-box;
+	-moz-box-sizing: 			border-box;
+	-o-box-sizing: 				border-box;
+	-ms-box-sizing: 			border-box;
+	box-sizing: 				border-box;
+}
+
+/* Sharebear */
+.sharebear {
+	font-size: 					0;
+	.sb-icon {
+		margin-right: 			6px;
+		margin-bottom: 			6px;
+		display: 				inline-block;
+		transition-property:	background-color,color,border-color;
+		transition-duration:	0.25s;
+		-webkit-transition-property: background-color,color,border-color;
+		-webkit-transition-duration: 0.25s;
+		color: 					$brand-color;
+		line-height: 			normal;
+		text-align: 			center;
+	}
+	.sb-icon:last-child {
+		margin-right: 			0;
+	}
+	.sb-icon:hover {
+		text-decoration: 		none;
+	}
+
+	// if grey, use brand colors on hover by default
+	.sb-facebook:hover {
+		color: 					$facebook;
+	}
+	.sb-twitter:hover {
+		color: 					$twitter;
+	}
+	.sb-google-plus:hover {
+		color: 					$googleplus;
+	}
+	.sb-reddit:hover {
+		color: 					$reddit;
+	}
+	.sb-linkedin:hover {
+		color: 					$reddit;
+	}
+	.sb-envelope:hover {
+		color: 					$envelope;
+	}
+	.sb-whatsapp:hover {
+		color: 					$whatsapp;
+	}
+	.sb-pinterest:hover {
+		color: 					$pinterest;
+	}
+	.sb-stumbleupon:hover {
+		color: 					$stumbleupon;
+	}
+}
+
+// Sizes
+.sb-small {
+	.sb-icon {
+		font-size: 				20px;
+		height:					35px;
+		width: 					35px;
+		i {
+			line-height: 		35px;
+		}
+	}
+}
+
+.sb-small.sb-outlined {
+	.sb-icon i {
+		line-height: 			33px;
+	}
+}
+
+.sb-small.sb-button {
+	.sb-icon {
+		padding: 				0 10px;
+		height: 				32px;
+		line-height: 			32px;
+	}
+}
+
+.sb-medium {
+	.sb-icon {
+		font-size: 				22px;
+		height:					45px;
+		width: 					45px;
+		i {
+			line-height: 		45px;
+		}
+	}
+}
+
+.sb-medium.sb-outlined {
+	.sb-icon i {
+		line-height: 			43px;
+	}
+}
+
+.sb-medium.sb-button {
+	.sb-icon {
+		padding: 				0 15px;
+		height: 				42px;
+		line-height: 			42px;
+	}
+}
+
+.sb-large {
+	.sb-icon {
+		font-size: 				24px;
+		height: 				55px;
+		width: 					55px;
+		i {
+			line-height: 		55px;
+		}
+	}
+}
+
+.sb-large.sb-outlined {
+	.sb-icon i {
+		line-height: 			53px;
+	}
+}
+
+.sb-large.sb-button {
+	.sb-icon {
+		padding: 				0 20px;
+		height: 				50px;
+		line-height: 			50px;
+	}
+}
+
+// Layouts
+.sb-outlined {
+	.sb-icon {
+		border:					2px solid $brand-color;
+		@include				border-radius(100%);
+	}
+}
+
+.sb-rounded {
+	.sb-icon {
+		background: 			$base-color;
+		@include				border-radius(100%);
+	}
+}
+
+.sb-boxed, .sb-button {
+	.sb-icon {
+		background: 			$base-color;
+		@include				border-radius(3px);
+	}
+}
+
+.sb-content {
+	.sb-button {
+		.sb-icon {
+			width: 				auto;
+			i {
+				line-height: 	normal;
+			}
+		}
+		.sb-button-text {
+			vertical-align: 	top;
+			font-size: 			12px;
+			margin-left: 		15px;
+		}
+	}
+}
+
+// Styles
+.sb-brand-color {
+	.sb-facebook {
+		color: 					$facebook;
+	}
+	.sb-twitter {
+		color: 					$twitter;
+	}
+	.sb-google-plus {
+		color: 					$googleplus;
+	}
+	.sb-reddit {
+		color: 					$reddit;
+	}
+	.sb-linkedin {
+		color: 					$linkedin;
+	}
+	.sb-envelope {
+		color: 					$envelope;
+	}
+	.sb-whatsapp {
+		color: 					$whatsapp;
+	}
+	.sb-pinterest {
+		color: 					$pinterest;
+	}
+	.sb-stumbleupon {
+		color: 					$stumbleupon;
+	}
+	.sb-facebook:hover {
+		color: 					lighten($facebook, 15%);
+	}
+	.sb-twitter:hover {
+		color: 					lighten($twitter, 15%);
+	}
+	.sb-google-plus:hover {
+		color: 					lighten($googleplus, 15%);
+	}
+	.sb-reddit:hover {
+		color: 					lighten($reddit, 15%);
+	}
+	.sb-linkedin:hover {
+		color: 					lighten($linkedin, 15%);
+	}
+	.sb-envelope:hover {
+		color: 					lighten($envelope, 15%);
+	}
+	.sb-whatsapp:hover {
+		color: 					lighten($whatsapp, 15%);
+	}
+	.sb-pinterest:hover {
+		color: 					lighten($pinterest, 15%);
+	}
+	.sb-stumbleupon:hover {
+		color: 					lighten($stumbleupon, 15%);
+	}
+}
+
+.sb-outlined.sb-filled {
+	.sb-facebook {
+		border-color: 			$facebook;
+		color: 					$facebook;
+	}
+	.sb-twitter {
+		border-color: 			$twitter;
+		color: 					$twitter;
+	}
+	.sb-google-plus {
+		border-color: 			$googleplus;
+		color: 					$googleplus;
+	}
+	.sb-reddit {
+		border-color: 			$reddit;
+		color: 					$reddit;
+	}
+	.sb-linkedin {
+		border-color: 			$linkedin;
+		color: 					$linkedin;
+	}
+	.sb-envelope {
+		border-color: 			$envelope;
+		color: 					$envelope;
+	}
+	.sb-whatsapp {
+		border-color: 			$whatsapp;
+		color: 					$whatsapp;
+	}
+	.sb-pinterest {
+		border-color: 			$pinterest;
+		color: 					$pinterest;
+	}
+	.sb-stumbleupon {
+		border-color: 			$stumbleupon;
+		color: 					$stumbleupon;
+	}
+	.sb-facebook:hover {
+		border-color:			lighten($facebook, 15%);
+		color: 					lighten($facebook, 15%);
+	}
+	.sb-twitter:hover {
+		border-color:			lighten($twitter, 15%);
+		color: 					lighten($twitter, 15%);
+	}
+	.sb-google-plus:hover {
+		border-color:			lighten($googleplus, 15%);
+		color: 					lighten($googleplus, 15%);
+	}
+	.sb-reddit:hover {
+		border-color:			lighten($reddit, 15%);
+		color: 					lighten($reddit, 15%);
+	}
+	.sb-linkedin:hover {
+		border-color:			lighten($linkedin, 15%);
+		color: 					lighten($linkedin, 15%);
+	}
+	.sb-envelope:hover {
+		border-color:			lighten($envelope, 15%);
+		color: 					lighten($envelope, 15%);
+	}
+	.sb-whatsapp:hover {
+		border-color: 			lighten($whatsapp, 15%);
+		color: 					lighten($whatsapp, 15%);
+	}
+	.sb-pinterest:hover {
+		border-color: 			lighten($pinterest, 15%);
+		color: 					lighten($pinterest, 15%);
+	}
+	.sb-stumbleupon:hover {
+		border-color: 			lighten($stumbleupon, 15%);
+		color: 					lighten($stumbleupon, 15%);
+	}
+}
+
+
+.sb-rounded.sb-filled, .sb-boxed.sb-filled, .sb-button.sb-filled {
+	.sb-facebook {
+		background: 			$facebook;
+		color: 					#fff;
+	}
+	.sb-twitter {
+		background: 			$twitter;
+		color: 					#fff;
+	}
+	.sb-google-plus {
+		background: 			$googleplus;
+		color: 					#fff;
+	}
+	.sb-reddit {
+		background: 			$reddit;
+		color: 					#fff;
+	}
+	.sb-linkedin {
+		background: 			$linkedin;
+		color: 					#fff;
+	}
+	.sb-envelope {
+		background: 			$envelope;
+		color: 					#fff;
+	}
+	.sb-whatsapp {
+		background: 			$whatsapp;
+		color: 					#fff;
+	}
+	.sb-pinterest {
+		background: 			$pinterest;
+		color: 					#fff;
+	}
+	.sb-stumbleupon {
+		background: 			$stumbleupon;
+		color: 					#fff;
+	}
+	.sb-facebook:hover {
+		background:				lighten($facebook, 15%);
+	}
+	.sb-twitter:hover {
+		background:				lighten($twitter, 15%);
+	}
+	.sb-google-plus:hover {
+		background:				lighten($googleplus, 15%);
+	}
+	.sb-reddit:hover {
+		background:				lighten($reddit, 15%);
+	}
+	.sb-linkedin:hover {
+		background:				lighten($linkedin, 15%);
+	}
+	.sb-envelope:hover {
+		background:				lighten($envelope, 15%);
+	}
+	.sb-whatsapp:hover {
+		background: 			lighten($whatsapp, 15%);
+	}
+	.sb-pinterest:hover {
+		background: 			lighten($pinterest, 15%);
+	}
+	.sb-stumbleupon:hover {
+		background: 			lighten($stumbleupon, 15%);
+	}
+}
+
+/* Location Modifier */
+
+// Content
+// .sb-content {
+// 	.sharebear {
+// 		.sb-icon {
+// 			vertical-align: 	middle;
+// 			margin-top: 		3px;
+// 			margin-bottom: 		3px;
+// 		}
+// 	}
+// 	.sb-counts {
+// 		margin-right: 			15px;
+// 		padding-right: 			15px;
+// 	}
+// 	.sb-counts:after {
+// 		content: 				"";
+// 		display: 				inline-block;
+// 		width: 					2px;
+// 		height: 				100%;
+// 		position: 				absolute;
+// 		right: 					0;
+// 		top: 					0;
+// 		background: 			$brand-color;
+// 		transform:				rotate(4deg);
+// 	}
+// }
+
+// Shortcode
+.sb-shortcode {
+
+}
+
+// Sidebar
+.sb-sidebar {
+	left: 						0;
+	@include					vertical-align();
+	z-index: 					999;
+	// Share Count
+	// .sb-counts {
+	// 	display: 				block;
+	// 	margin-bottom: 			10px;
+	// }
+	// Sizes (headlines)
+	.sb-small {
+		width: 					35px;
+	}
+	.sb-medium {
+		width: 					45px;
+	}
+	.sb-large {
+		width: 					55px;
+	}
+	// Sharebear
+	.sharebear {
+		.sb-title {
+			margin-bottom: 		10px;
+			display: 			block;
+			font-size: 			12px;
+			text-align: 		center;
+		}
+		.sb-button-text {
+			display: 			none;
+		}
+		.sb-icon {
+			display: 			block;
+			margin-right: 		0;
+		}
+	}
+	// None, Rounded, Outlined
+	.sb-none, .sb-rounded, .sb-outlined {
+		margin-left: 			15px;
+	}
+	// Boxed
+	.sb-boxed, .sb-button {
+		.sb-title {
+			display: 			none;
+		}
+		.sb-icon {
+			transition-property:			background-color,color,border-color,width;
+			transition-duration:			0.25s;
+			-webkit-transition-property:	background-color,color,border-color,width;
+			-webkit-transition-duration:	0.25s;
+			padding: 			0;
+			margin-bottom: 		0;
+			@include			border-radius(0);
+		}
+		.sb-icon:hover {
+			width: 				112%;
+		}
+	}
+}
+
+// Bottom Bar
+.sb-bottom-bar {
+	position: 					fixed;
+	left: 						0;
+	bottom: 					0;
+	width: 						100%;
+	background: 				$base-color;
+	z-index: 					999;
+	.sharebear {
+		display:				-webkit-flex;
+		display:				flex;
+		-webkit-flex-wrap:		nowrap;
+		flex-wrap:				nowrap;
+		-webkit-justify-content:space-around;
+		justify-content:		space-around;
+		.sb-title {
+			display: 			none;
+		}
+		.sb-button-text {
+			display: 			none;
+		}
+		.sb-icon {
+			width: 				100%;
+			padding: 			0 10px;
+			margin: 			0;
+			@include			border-radius(0);
+			border:				none;
+		}
+	}
+}
+
+/* Sharebear Counts */
+// .sb-counts {
+// 	vertical-align: 			middle;
+// 	position: 					relative;
+// 	display: 					inline-block;
+// 	text-align: 				center;
+// 	line-height: 				normal;
+// 	.count {
+// 		font-size: 				22px;
+// 		display: 				block;
+// 	}
+// 	.shares {
+// 		text-transform: 		uppercase;
+// 		font-size: 				10px;
+// 		display: 				block;
+// 	}
+// }
